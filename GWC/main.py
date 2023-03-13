@@ -2,8 +2,6 @@ from library_inventory import Library_Inventory
 from books import Books
 from book_status import Book_Status
 
-
-
 inventory1 = Library_Inventory()
 
 book0 = Books()
@@ -27,7 +25,8 @@ for i in range(len(inventory1.book_name)):
     except:
         print(inventory1.book_status[i])
 
-inventory1.book_status[1].update_book_status()
+# this can also work as well: inventory1.book_status[1] = 'checked out'
+inventory1.book_status[1] = book1_status.update_book_status()
 
 for i in range(len(inventory1.book_name)):
     print(inventory1.book_name[i].book_name)
