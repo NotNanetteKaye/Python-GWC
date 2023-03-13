@@ -4,3 +4,6 @@ class Perro:
         self.toys = []
         self.collar = []
         self.slobers = True
+
+    def pant():
+        pass
