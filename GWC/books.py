@@ -1,6 +1,6 @@
 class Books:
-    def __init__(self):
-        self.book_name = []
+    def __init__(self, book_name):
+        self.book_name = book_name
         self.book_status = 'on shelf'
 
     def update_book_status(self):
