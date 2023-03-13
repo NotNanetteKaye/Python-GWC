@@ -3,3 +3,4 @@ class Perro:
         self.breed= ''
         self.toys = []
         self.collar = []
+        self.slobers = True
