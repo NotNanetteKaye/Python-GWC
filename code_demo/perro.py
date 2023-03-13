@@ -7,3 +7,6 @@ class Perro:
 
     def pant():
         pass
+
+    def eat(self, food):
+        pass
