@@ -1,5 +1,5 @@
 class Perro:
-    def __init__(self) -> None:
+    def __init__(self):
         self.breed= ''
         self.toys = []
         self.collar = []
