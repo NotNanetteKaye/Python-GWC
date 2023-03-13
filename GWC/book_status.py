@@ -1,6 +1,6 @@
 class Book_Status:
     def __init__(self):
-        self.status = 'on shelf'
+        self.book_status = 'on shelf'
         pass
 
     def update_book_status(self):

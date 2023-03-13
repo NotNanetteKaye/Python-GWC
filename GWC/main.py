@@ -4,17 +4,36 @@ from book_status import Book_Status
 
 
 
-book1 = Library_Inventory()
-dr_seuss = Books()
-dr_seuss.book_name = 'dr.seuss'
-checked_out = Book_Status()
-checked_out.book_status = 'checked out'
+inventory1 = Library_Inventory()
 
-book1.book_name.append(dr_seuss)
-book1.book_status.append(checked_out)
+book0 = Books()
+book0.book_name = 'Dr. Seuss'
+book0_status = Book_Status()
+book0_status.book_status = 'checked out'
+inventory1.book_name.append(book0)
+inventory1.book_status.append(book0_status)
 
-print(book1.book_name[0].book_name)
-print(book1.book_status[0].book_status)
+book1 = Books()
+book1.book_name = 'Junie B. Jones'
+book1_status = Book_Status()
+inventory1.book_name.append(book1)
+inventory1.book_status.append(book1_status.book_status)
+# print(inventory1.book_status[1])
 
+for i in range(len(inventory1.book_name)):
+    print(inventory1.book_name[i].book_name)
+    try:
+        print(inventory1.book_status[i].book_status)
+    except:
+        print(inventory1.book_status[i])
+
+inventory1.book_status[1].update_book_status()
+
+for i in range(len(inventory1.book_name)):
+    print(inventory1.book_name[i].book_name)
+    try:
+        print(inventory1.book_status[i].book_status)
+    except:
+        print(inventory1.book_status[i])
 
 # book1.run_inventory()
