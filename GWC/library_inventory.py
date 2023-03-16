@@ -7,6 +7,7 @@ class Library_Inventory:
         self.book_status = []
     
     def loop_through_lists(self):
+        print('\nCurrent library inventory: ')
         for i in range(len(self.book_name)):
             print(f'\nBook Name: {self.book_name[i].book_name}')
             try:
