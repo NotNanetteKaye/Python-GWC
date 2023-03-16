@@ -6,6 +6,16 @@ class Library_Inventory:
         self.book_name = []
         self.book_status = []
     
+    def loop_through_lists(self):
+        for i in range(len(self.book_name)):
+            print(f'Book Name: {self.book_name[i]}')
+            try:
+                print(f'Book Status: {self.book_status[i].book_status}')
+            except:
+                print(f'Book Status: {self.book_status[i]}')
+
+        pass
+
     def display_welcome(self):
         print('Welcome to the library inventory! Here you will find all the books and their status.')
         pass
