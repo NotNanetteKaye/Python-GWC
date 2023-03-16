@@ -20,4 +20,4 @@ inventory1.book_status.append(book1_status.book_status)
 
 inventory1.loop_through_lists()
 book1_status.update_book_status()
-inventory1.loop_through_lists()
+print(book1_status.book_status)

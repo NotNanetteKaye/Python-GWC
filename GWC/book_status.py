@@ -1,3 +1,5 @@
+from library_inventory import Library_Inventory
+
 class Book_Status:
     def __init__(self):
         self.book_status = 'on shelf'
@@ -7,9 +9,8 @@ class Book_Status:
         user_input = int(input('Please enter 1 for checked out or 2 for on shelf status. Default is on shelf: '))
         if user_input == 1 or user_input == 2:
             if user_input == 1:
-                book_status = 'checked out'
+                self.book_status = self.book_status.replace('on shelf', 'checked out')
                 print('Updated to checked out!' )
-                return book_status
             elif user_input == 2:
                 book_status = 'on shelf'
                 print('Kept the status to on shelf!')
