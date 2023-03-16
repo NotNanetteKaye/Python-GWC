@@ -8,19 +8,18 @@ class Library_Inventory:
     
     def loop_through_lists(self):
         for i in range(len(self.book_name)):
-            print(f'Book Name: {self.book_name[i]}')
+            print(f'Book Name: {self.book_name[i].book_name}')
             try:
                 print(f'Book Status: {self.book_status[i].book_status}')
             except:
                 print(f'Book Status: {self.book_status[i]}')
-
         pass
 
-    def display_welcome(self):
+#    def display_welcome(self):
         print('Welcome to the library inventory! Here you will find all the books and their status.')
         pass
 
-    def book_mode(self): 
+#    def book_mode(self): 
         print('Would you like to add a book or see current available books?')
         user_input = input('Please enter 1 for adding new books or 2 to see current books: ')
         if user_input == '1' or user_input == '2':
@@ -46,12 +45,12 @@ class Library_Inventory:
             self.book_mode()
         pass
 
-    def current_inventory(self):
+#    def current_inventory(self):
         print('Current books in the inventory: ')
         for book in range(len(self.book_name)):
             print[book]
 
-    def run_inventory(self):
+#    def run_inventory(self):
         self.display_welcome()
         self.book_mode()
         self.current_inventory()
