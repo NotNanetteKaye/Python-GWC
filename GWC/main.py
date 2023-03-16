@@ -3,6 +3,7 @@ from books import Books
 from book_status import Book_Status
 
 inventory1 = Library_Inventory()
+inventory1.inventory_name = 'Nanette Kaye'
 
 book0 = Books()
 book0.book_name = 'Dr. Seuss'
