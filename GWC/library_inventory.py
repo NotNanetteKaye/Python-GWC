@@ -1,23 +1,23 @@
 
-
 class Library_Inventory:
-    def __init__(self):
-        self.inventory_name = ''
-        self.book_name = []
-        self.book_status = Book_Status('on shelf')
-    
-    def loop_through_inventory_list(self):
-        print('\n- - - - - - - - - - - - - -\n')
-        print(f'{self.inventory_name}\'s library inventory:\n')
-        for i in range(len(self.book_name)):
-            print(f'Book Name: {self.book_name[i].book_name}')
-            try:
-                print(f'Book Status: {self.book_status.book_status[i]}\n')
-            except:
-                print(f'Book Status: {self.book_status[i]}\n')
-        print('- - - - - - - - - - - - - -')
+    def __init__(self, inventory_name):
+        self.inventory_name = inventory_name
+        self.books = []
         pass
 
-    def update_inventory_status(self):
-        self.book_status.append('checked out')
+    def append_book_to_inventory(self, book):
+        self.books.append(book)
         pass
+
+    def loop_through_inventory(self):
+        print('\n- - - - - - - - - - - - - - - - - - -')
+        print(f'\n{self.inventory_name}\'s Library Inventory: \n')
+        for i in range(len(self.books)):
+            print('Book Name: ', self.books[i].book_name)
+            if self.books[i].book_status == 1:
+                print('Book Status: Checked Out\n')
+            else:
+                print('Book Status: On Shelf\n')
+        print('- - - - - - - - - - - - - - - - - - -\n')
+
+    
