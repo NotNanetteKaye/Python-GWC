@@ -7,6 +7,7 @@ class Library_Inventory:
 
     def append_book_to_inventory(self, book):
         self.books.append(book)
+        print(f'\nSuccessfully added book(s), {book.book_name}, to {self.inventory_name}\'s Library Inventory!\n')
         pass
 
     def loop_through_inventory(self):
