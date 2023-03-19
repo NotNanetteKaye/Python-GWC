@@ -7,8 +7,9 @@ https://docs.google.com/document/d/1pbboQAF8FZD-NFKHKCzE2gcQ7tYQg20VGXLaztOlyYA/
 ### 2 WAYS TO SOLVE:  
 ## OOPC CLASSES  
 ![](images/GWC_class_diagram.png)  
-  
+
 ## PYTHON DICTIONARY  
+🤔: Need to start  
 
 
 
