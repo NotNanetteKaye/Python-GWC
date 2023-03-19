@@ -1,8 +1,9 @@
 from library_inventory import Library_Inventory
 
-class Book_Status:
+class Book_Status(Library_Inventory):
     def __init__(self):
-        self.book_status = 'on shelf'
+        super().__init__()
+        self.book_status = []
         pass
 
     def update_book_status(self):
@@ -11,6 +12,7 @@ class Book_Status:
             if user_input == 1:
                 self.book_status = self.book_status.replace('on shelf', 'checked out')
                 print('Updated to checked out!' )
+                
             elif user_input == 2:
                 book_status = 'on shelf'
                 print('Kept the status to on shelf!')
@@ -19,3 +21,4 @@ class Book_Status:
             print('Invalid option. Please try again.')
             self.update_book_status()
         pass
+

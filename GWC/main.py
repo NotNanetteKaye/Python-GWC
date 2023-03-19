@@ -3,21 +3,7 @@ from books import Books
 from book_status import Book_Status
 
 inventory1 = Library_Inventory()
-inventory1.inventory_name = 'Nanette Kaye'
+inventory1.inventory_name = 'Nanette'
 
-book0 = Books()
-book0.book_name = 'Dr. Seuss'
-book0_status = Book_Status()
-book0_status.book_status = 'checked out'
-inventory1.book_name.append(book0)
-inventory1.book_status.append(book0_status)
-
-book1 = Books()
-book1.book_name = 'Junie B. Jones'
-book1_status = Book_Status()
-inventory1.book_name.append(book1)
-inventory1.book_status.append(book1_status.book_status)
-
-inventory1.loop_through_lists()
-book1_status.update_book_status()
-print(book1_status.book_status)
+book0 = Books('Dr. Seuss')
+print(book0.book_status)
